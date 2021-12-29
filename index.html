@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sec1{
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+
+            flex-direction: column;
+            justify-content: center;
+            transform: translate(-100px,-200px);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <section class="sec1">
+   
+    <div class="container"
+			style="text-align: center;
+					margin-top: 350px">
+                    
+			
+			<img src=
+            https://i.pinimg.com/originals/6d/aa/39/6daa39eb9cac1f2c03c574f2a329a2f1.jpg height="30px" width="30px"
+				 onclick="raj(this)" />
+		</div>
+    </section>
+
+	
+		<script>
+	
+			function raj(img){
+				img.style.transform = " rotate(360deg) scale(20)";
+				img.style.transition =
+				"transform 0.25s ease ";
+            
+			}
+		</script>
+</body>
+</html>
